@@ -40,7 +40,7 @@ func main() {
 
 			fmt.Println(c.RemoteAddr().String(), `está dizendo :"`, string(b)+`"`)
 
-			c.Write([]byte("diz vinhadum"))
+			c.Write([]byte("mensagem recebida"))
 
 			fmt.Println("fechando conexão com", c.RemoteAddr().String())
 
